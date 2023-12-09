@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('../partials/head.ejs'); %>
+</head>
+<body>
+    <% if (typeof sessionId !== 'undefined') { %>
+    <div class="d-flex justify-content-center align-item-center">
+        <img src="https://imagify.io/blog/wp-content/uploads/2022/04/How-an-image-CDN-works-4-major-steps-Source-Imagify.png" style="width: 100%; height: auto;">
+    </div>
+    <% } else { %>
+    <div class="d-flex justify-content-center align-item-center display-1">NOT FOUND</div>
+    <% } %>
+</body>
+</html>
